@@ -5,34 +5,58 @@
         <meta charset="UTF-8">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="javascript.js defer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Itim&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="header">
-            Rock Paper Scissors
-        </div>
-
-        <div class="content">
-            <div class="title">Human vs Computer</div>
-
-            <div class="container"></div>
-
-            <div class="score">
-                <div class="human_score">0</div>
-                <div class="score_title"></div>
-                <div class="computer_score">0</div>
+        <main id="main-content">
+            <div class="header">
+                Rock Paper Scissors
             </div>
-        </div>
-
-        <div class="choose">
-            <div class="title">Choose one of the 3 signs</div>
-
-            <div class="container">
-                <div class="rock"></div>
-                <div class="paper"></div>
-                <div class="scissors"></div>
+    
+            <div class="content">
+                <div class="title">Human vs Computer</div>
+    
+                <div class="game-container">
+                    <div class="player-weapon">?</div>
+                    <div class="computer-weapon">?</div>
+                </div>
+    
+                <div class="score">
+                    <div class="player">
+                        <div class="player-name">You</div>
+                        <div class="player-score">0</div>
+                    </div>
+                    <div class="score-title"></div>
+                    <div class="computer">
+                        <div class="computer-name">Computer</div>
+                        <div class="computer-score">0</div>
+                    </div>
+                </div>
             </div>
+    
+            <div class="choose">
+                <div class="title">Choose your weapon</div>
+    
+                <div class="btn-container">
+                    <div id="rock "class="button">
+                        <img src="images/rock.png" alt="rock">
+                    </div>
+                    <div id="paper" class="button">
+                        <img src="images/paper.png" alt="paper">
+                    </div>
+                    <div id="scissors" class="button">
+                        <img src="images/scissors.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="end-alert" class="disappear">
+            <div id="end-desc"></div>
+            <button id="retry-btn">Play again</button>
         </div>
+        <script src="javascript.js"></script>
     </body>
 </html>

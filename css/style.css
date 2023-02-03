@@ -1,0 +1,161 @@
+body {
+    background: #000;
+    /* background-image: url("images/mickey.png"); */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    /* overflow-clip-margin: content-box;
+    overflow: clip; */
+    width: 200px;
+    height: 150px;
+}
+
+.header {
+    /* border: 2px solid blue; */
+    /* font-family: "PT Sans", Calibri, Tahoma, sans-serif; */
+    padding: 20px;
+    font-size: 75px;
+    font-weight: 900;
+    /* background-color: #023047; */
+    color: #ffb703;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 20px;
+    font-size: 32px;
+    color: #ffb703;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.game-container {
+    display: flex;
+    color: #fff;
+    gap: 300px;
+    font-size: 150px;
+    justify-content: center;
+}
+
+.player-weapon,
+.computer-weapon {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.player,
+.computer {
+    width: 200px;
+}
+
+.player-name,
+.computer-name {
+    font-size: 32px;
+    color: #ffb703;
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.player-score,
+.computer-score {
+    font-size: 32px;
+    color: #ffb703;
+    text-align: center;
+}
+
+.score-title {
+    width: 300px;
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose {
+    flex: 1;
+    /* background-color: aqua; */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px;
+    color: white;
+}
+
+.header {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Itim', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#end-alert.disappear,
+.disappear {
+    display: none;
+}
+
+#end-alert {
+    font-size: 50px;
+    color: #ffb703;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#retry-btn {
+    margin-top: 20px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+#retry-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
